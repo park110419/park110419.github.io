@@ -1,0 +1,20 @@
+.rounded {
+    width: 500px;
+    height: 250px;
+    padding-bottom: 2em;
+}
+.rounded1 {
+    width: 700px;
+    height: 700px;
+    padding-bottom: 20em;
+    padding-left: 2em;
+}
+.showbody {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: grey;
+}
+
+
