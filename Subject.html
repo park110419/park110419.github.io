@@ -11,77 +11,91 @@
     <img src="image/MySubject.jpg" class="rounded mx-auto d-block">
 </head>
 <body class = "showSubject">
-    <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Day</th>
-            <th scope="col">Subject</th>
-            <th scope="col">Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Sunday</th>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <th scope="row">Monday</th>
-            <td>01418497 Seminar</td>
-            <td>8:00 - 11:00</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>01418321 System Analysis and Design</td>
-            <td>12:30 - 16:30</td>
-          </tr>
-          <tr>
-            <th scope="row">Tuesday</th>
-            <td>01418442 Web Technology and Web Services</td>
-            <td>8.00 - 10.00</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>01418442 Web Technology and Web Services</td>
-            <td>12.30 - 14.30</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>01355202 Fundamental English Writing</td>
-            <td>12.30 - 14.30</td>
-          </tr>
-          <tr>
-            <th scope="row">Wednesday</th>
-            <td>01418341 Intellectual Properties and Professional Ethics</td>
-            <td>8:00 - 9:30</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>01418231 Data Structures</td>
-            <td>10.00 - 11.30</td>
-          </tr>
-          <tr>
-            <th scope="row">Thursday</th>
-            <td>01355202 Fundamental English Writing</td>
-            <td>12.30 - 14.30</td>
-          </tr>
-          <tr>
-            <th scope="row">Friday</th>
-            <td>01418341 Intellectual Properties and Professional Ethics</td>
-            <td>8:00 - 9:30</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>01418231 Data Structures</td>
-            <td>10.00 - 11.30</td>
-          </tr>
-          <tr>
-            <th scope="row">Saturday</th>
-            <td>01385261 Northern Thai Folk Music</td>
-            <td>16:30 - 19:30</td>
-          </tr>
-        </tbody>
-      </table>
+  <script>function unhide (page){
+    document.getElementById(page).style.visibility='visible';
+    document.getElementById(page).style.position='relative';
+    }
+    function hide (page){
+    document.getElementById(page).style.visibility='hidden';
+    document.getElementById(page).style.position='absolute';
+    }</script>
+    </head><body>
+    <a href="javascript:unhide('data1')">Monday</a>
+    <div id="data1" style='border:1px solid;position:absolute;visibility:hidden;'>
+      <a href="javascript:unhide('data2')">01418497 Seminar</a> |
+      <div id="data2" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data2')">Unshow</a> |
+        8.00 - 11.00 เรียนผ่าน Google Meet</div>
+      <a href="javascript:unhide('data3')">01418321 System Analysis and Design</a> |
+      <div id="data3" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data3')">Unshow</a> |
+        12:30 - 16:30 เรียนผ่าน Google Meet</div>
+    </div>
+    <br>
+    <a href="javascript:unhide('data4')">Tuesday</a>
+    <div id="data4" style='border:1px solid;position:absolute;visibility:hidden;'>
+      <a href="javascript:unhide('data5')">01418442 Web Technology and Web Services</a> |
+      <div id="data5" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data5')">Unshow</a> |
+        8.00 - 10.00 และ 12.30 - 14.30 เรียนผ่าน Microsoft Teams</div>
+      <a href="javascript:unhide('data6')">01355202 Fundamental English Writing</a> |
+      <div id="data6" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data6')">Unshow</a> |
+        12.30 - 14.30 เรียนผ่าน Line Group</div>
+    </div>
+    <br>
+    <a href="javascript:unhide('data7')">Wednesday</a>
+    <div id="data7" style='border:1px solid;position:absolute;visibility:hidden;'>
+      <a href="javascript:unhide('data8')">01418341 Intellectual Properties and Professional Ethics</a> |
+      <div id="data8" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data8')">Unshow</a> |
+        8:00 - 9:30 ฟังคลิปบรรยายและทำแบบฝึกหัด</div>
+      <a href="javascript:unhide('data9')">01418231 Data Structures</a> |
+      <div id="data9" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data9')">Unshow</a> |
+        10.00 - 11.30 เรียนผ่าน Google Meet</div>
+    </div>
+    <br>
+    <a href="javascript:unhide('data10')">Thursday</a>
+    <div id="data10" style='border:1px solid;position:absolute;visibility:hidden;'>
+      <a href="javascript:unhide('data11')">01355202 Fundamental English Writing</a> |
+      <div id="data11" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data11')">Unshow</a> |
+        12.30 - 14.30 เรียนผ่าน Line Group</div>
+    </div>
+    <br>
+    <a href="javascript:unhide('data12')">Friday</a>
+    <div id="data12" style='border:1px solid;position:absolute;visibility:hidden;'>
+      <a href="javascript:unhide('data13')">01418341 Intellectual Properties and Professional Ethics</a> |
+      <div id="data13" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data13')">Unshow</a> |
+        8:00 - 9:30 ฟังคลิปบรรยายและทำแบบฝึกหัด</div>
+      <a href="javascript:unhide('data14')">01418231 Data Structures</a> |
+      <div id="data14" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data14')">Unshow</a> |
+        10.00 - 11.30 เรียนผ่าน Google Meet</div>
+    </div>
+    <br>
+    <a href="javascript:unhide('data15')">Saturday</a>
+    <div id="data15" style='border:1px solid;position:absolute;visibility:hidden;'>
+      <a href="javascript:unhide('data16')">01385261 Northern Thai Folk Music</a> |
+      <div id="data16" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data16')">Unshow</a> |
+        16:30 - 19:30 ฟังคลิปบรรยายและทำแบบฝึกหัด</div>
+    </div>
+    <br>
+    <a href="javascript:unhide('data17')">Sunday</a>
+    <div id="data17" style='border:1px solid;position:absolute;visibility:hidden;'>
+      <a href="javascript:unhide('data18')">No Class</a> |
+      <div id="data18" style='border:1px solid;position:absolute;visibility:hidden;'>
+        <a href="javascript:hide('data18')">Unshow</a> |
+        No Class</div>
+    </div>
+
     
+    
+    
+    
+  
 </body>
 </html>

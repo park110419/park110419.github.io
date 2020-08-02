@@ -21,7 +21,10 @@
 }
 .showSubject {
     padding-top: 1em;
-    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-bottom: 5em;
     background-color: lightblue;
+    font-family: monospace;
+    font-size: 25px;
 }
 
